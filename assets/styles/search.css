@@ -1,0 +1,281 @@
+@import url("../styles/font.css");
+
+
+* {
+    box-sizing: border-box;
+    font-family: "reg";
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.bold{
+    font-family: bol;
+}
+
+
+.semi{
+    font-family: semi;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+   
+
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+ .info-location{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+
+.info-location .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding:20px;
+    
+    
+}
+
+.title p{
+    font-size: 2.7rem;
+    color:rgb(68, 66, 66);
+    
+}
+
+.info-location .blocks{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.info-location .blocks .block{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;  
+    box-shadow: 10px 10px 30px 20px #c5c5c7;
+    padding: 30px;  
+    background-color: rgb(37, 35, 35);
+    border-radius: 2rem;
+}
+
+.block p{
+    color:white
+}
+
+
+.title p{
+    font-weight: 600;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+  }
+
+
+/* Additional styling */
+  
+
+h1, h2 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+}
+  
+h1 {
+    font-size: 4rem;
+    animation: pulsate 0.11s ease-in-out infinite alternate;     
+}
+  
+h2 {
+    font-size: 1.8rem;
+}
+
+
+
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+
+}
+}
+
+
+.info-location .blocks .block .info-p{
+    margin-top: 2rem;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-location .blocks .block .info-p p:nth-child(1){
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.info-location .blocks .block .info-p p:nth-child(2), .info-p p:nth-child(3){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.info-p p:nth-child(3){
+    margin-top: 0;
+}
+
+
+
+
+button {
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #f09;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+   }
+   
+   button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #f09;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+  
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button:hover span {
+    color: rgb(37, 35, 35);
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+
+
+   .info-p a{
+    color:white;
+    text-decoration: none;
+   }
+
+   .info-location .blocks .block .info-p{
+    margin: 0 auto;
+    margin-top: 2rem;
+   }
+
+   @media screen and (max-width: 480px){
+    .container {
+        width: 100%;
+    
+    }
+
+
+    .blocks{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+   
+
+    .info-location .blocks .block{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    button span{
+        padding: 18px 10px;
+    }
+
+}

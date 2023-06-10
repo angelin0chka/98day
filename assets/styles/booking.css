@@ -1,0 +1,200 @@
+@import url("../styles/font.css");
+
+
+* {
+    box-sizing: border-box;
+    font-family: "reg";
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-family: bol;
+}
+
+
+.semi{
+    font-family: semi;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+   
+
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    
+    border:1px solid rgb(68, 66, 66);
+    background: transparent;
+  }
+
+  label{
+    color:rgb(68, 66, 66);
+    font-weight: 400;
+  }
+  
+ input[type=text]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  } 
+
+  .radio{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+.check{
+    padding-bottom: 2rem;
+   
+
+  }
+.radio{
+    padding-bottom: 1rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.form .look{
+    align-items: center;
+    justify-content: center;
+}
+
+.radio1{
+    margin-bottom: 0.2rem;
+}
+
+.section-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 30px 20px #c5c5c7;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.title{
+    padding:40px;
+}
+
+.text-altay{
+    font-size: 2.5rem;
+}
+
+.title p{
+    font-size: 2.5rem;
+    color:rgb(68, 66, 66);
+}
+
+
+.info-form{
+    width: 80%;
+}
+
+.look{
+    justify-content: space-between;
+    display: flex;
+    width: 50%;
+    background: rgb(0,82,212);
+    background: linear-gradient(90deg, rgba(32,95,237,1) 0%, rgb(169, 123, 237) 50%, rgb(178, 81, 235) 100%);
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.look a p{
+    color:white;
+}
+
+a{text-decoration: none;}
+
+
+.title .bold{
+
+        background: rgb(32,95,237);
+        background: linear-gradient(90deg, rgba(32,95,237,1) 0%, rgba(103,166,241,1) 50%, rgb(178, 81, 235) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.section-form{
+    padding-bottom: 5rem;
+}
+
+
+.title .bold{
+    position: relative;
+}
+
+.title .bold img{
+    position: absolute;
+    width: 60%;
+}
+
+.title .bold img:first-child{
+    left:-8.9rem
+}
+
+.title .bold img:last-child{
+    right:-20rem
+}
+
+@media screen and (max-width: 480px){
+.container {
+    width: 100%;
+
+}
+
+.form{
+    width: 80%;
+}
+
+.title .bold img {
+    width: 50%;
+}
+
+.title .bold img:first-child {
+    left: 0rem;
+    top: 6rem;
+}
+
+.title .bold img:last-child {
+    right: -6rem;
+    top: 6rem;
+}
+
+.look{
+    width: 100%;
+}
+
+
+}
